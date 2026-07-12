@@ -4,7 +4,7 @@
     {
       "parameters": {
         "httpMethod": "POST",
-        "path": "00c94e49-d818-4a87-b028-09b16d9b34c2",
+        "path": "wazuh-alert-webhook",
         "options": {}
       },
       "type": "n8n-nodes-base.webhook",
@@ -15,7 +15,7 @@
       ],
       "id": "13a32e7b-f6bd-44b9-bbc2-d1c7ce5e1c0b",
       "name": "Webhook",
-      "webhookId": "00c94e49-d818-4a87-b028-09b16d9b34c2"
+      "webhookId": "wazuh-alert-webhook"
     },
     {
       "parameters": {
@@ -32,13 +32,8 @@
       ],
       "id": "96698382-13ec-4e1e-a9c2-b6835135eb6a",
       "name": "Send a message",
-      "webhookId": "77491e79-9af5-4029-8fc4-4b24ba039677",
-      "credentials": {
-        "gmailOAuth2": {
-          "id": "T0RRqwoQKDdCvLUn",
-          "name": "Gmail account"
-        }
-      }
+      "webhookId": "wazuh-alert-webhook",
+      
     }
   ],
   "pinData": {},
