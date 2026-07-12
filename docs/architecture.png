@@ -1,1 +1,11 @@
 
+Wazuh SIEM
+     |
+     ↓
+Custom Integration
+     |
+     ↓
+n8n Webhook
+     |
+     ↓
+Gmail Notification
