@@ -19,7 +19,7 @@
     },
     {
       "parameters": {
-        "sendTo": "microsoftwess@gmail.com",
+        "sendTo": "SOC-EMAIL@gmail.com",
         "subject": "🚨 [WAZUH] Security Alert Detected",
         "message": "=Bonjour,\n\nUne nouvelle alerte de sécurité a été détectée par la plateforme SOAR.\n\n<br>\n\n<h3>🔍 Alert Information</h3>\n\n<table>\n<tr>\n<td><b>Event Type</b></td>\n<td>{{$json.body.location}}</td>\n</tr>\n\n<tr>\n<td><b>Rule ID</b></td>\n<td>{{$json.body.rule.id}}</td>\n</tr>\n\n<tr>\n<td><b>Severity Level</b></td>\n<td>{{$json.body.rule.level}} / 15</td>\n</tr>\n\n<tr>\n<td><b>Agent</b></td>\n<td>{{$json.body.agent.name}}</td>\n</tr>\n\n<tr>\n<td><b>Detection Time</b></td>\n<td>{{$json.body.timestamp}}</td>\n</tr>\n\n<tr>\n<td><b>Alert ID</b></td>\n<td>{{$json.body.id}}</td>\n</tr>\n</table>\n\n<br>\n\n<h3>📋 Event Details</h3>\n\n<pre>\n{{$json.body.full_log}}\n</pre>\n\n<br>\n\n<h3>⚙️ SOAR Response</h3>\n\n<ul>\n<li>Alert received automatically</li>\n<li>Analysis workflow triggered</li>\n<li>Status: <b>Investigating</b></li>\n</ul>\n\n<br>\n\n<hr>\n\n<b>SOAR Automation Platform</b><br>\nWazuh + n8n Integration\n",
         "options": {}
