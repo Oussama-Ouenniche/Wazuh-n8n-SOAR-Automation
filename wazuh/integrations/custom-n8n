@@ -1,1 +1,25 @@
 
+#!/usr/bin/env python3
+
+import sys
+import json
+import requests
+
+alert_file = sys.argv[1]
+hook_url = sys.argv[3]
+
+with open(alert_file, "r") as file:
+    alert = json.load(file)
+
+try:
+    response = requests.post(
+        hook_url,
+        json=alert,
+        timeout=10
+    )
+
+    response.raise_for_status()
+
+except Exception as error:
+    with open("/var/ossec/logs/custom-n8n.log", "a") as log:
+        log.write(str(error) + "\n")
