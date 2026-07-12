@@ -57,10 +57,7 @@
     "availableInMCP": false
   },
   "versionId": "bc0cea39-993f-4452-aa41-2b31421a73cc",
-  "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "e213da860df49ac4337d78e51597d2a19dedb51997e104a3cb361b7453dd4017"
-  },
+  
   "nodeGroups": [],
   "id": "T4ugqk23N0yX0aOi",
   "tags": []
